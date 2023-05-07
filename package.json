@@ -2,9 +2,10 @@
   "name": "blog20183826",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,9 +25,12 @@
   },
   "homepage": "https://github.com/thanhthai18/test_nodejs#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "sass": "^1.62.1"
   }
 }
